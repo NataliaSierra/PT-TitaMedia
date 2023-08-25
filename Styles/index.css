@@ -3,9 +3,13 @@
   margin: 0%;
   padding: 0%;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   width: 100%;
 }
+/* Menu */
 .nav-container {
   display: flex;
   justify-content: space-around;
@@ -25,16 +29,16 @@ header {
 .header-logo img {
   width: 100%;
 }
-.container-link{
+.container-link {
   align-items: center;
   display: flex;
   height: 2rem;
   justify-content: center;
   width: 5rem;
-} 
-.container-link-ph{
+}
+.container-link-ph {
   align-items: center;
-} 
+}
 .link-menu {
   align-items: center;
   color: #817f7f;
@@ -58,25 +62,63 @@ header {
   width: 7rem;
 }
 .link-menu:focus {
-  background-color: #FF5672;
+  background-color: #ff5672;
   color: #ffffff;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .link-menu-ph:focus {
-  background-color: #FF5672;
+  background-color: #ff5672;
   color: #ffffff;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .link-menu:hover {
   background-color: #f7bac4;
   color: #ffffff;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .link-menu-ph:hover {
   background-color: #f7bac4;
   color: #ffffff;
-  transition: 0.5s;
+  transition: 0.4s;
 }
+/* End Menu */
+
+/* Menu Mobile*/
+.menu-btn {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+}
+.menu {
+  background-color: #ff5672b5;
+  height: 100%;
+  left: -300px;
+  position: fixed;
+  transition: left 0.3s ease-in-out;
+  top: 0;
+  width: 300px;
+}
+.menu.active {
+  left: 0;
+}
+.menu ul {
+  list-style: none;
+  padding: 2rem 2rem;
+}
+.menu ul li {
+  border-bottom: 1px solid #fff;
+  padding: 15px;
+}
+.menu ul li a {
+  color: #fff;
+  display: block;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* End Menu Mobile*/
+
 main {
   align-items: center;
   display: flex;
@@ -84,9 +126,10 @@ main {
   justify-content: center;
   width: 100%;
 }
+/* Section One */
 .container-box {
   align-items: center;
-  background-color: #FF5672;
+  background-color: #ff5672;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,6 +141,7 @@ main {
   font-family: Montserrat;
   font-weight: 700;
   letter-spacing: 8px;
+  text-align: center;
   text-transform: uppercase;
 }
 .p-section-box {
@@ -107,10 +151,10 @@ main {
   margin-top: 2rem;
   text-align: center;
 }
-.button-section-box  {
+.button-section-box {
   background-color: #ffffff;
   border: #ffffff;
-  color:#FF5672;
+  color: #ff5672;
   cursor: pointer;
   font-family: Montserrat;
   font-weight: 700;
@@ -119,12 +163,203 @@ main {
   text-transform: uppercase;
   width: 10rem;
 }
+/* End Section One */
+/* Section Two */
 .container-icons {
   align-items: center;
   display: flex;
   justify-content: space-around;
   margin-top: 5rem;
+  gap: 10px;
 }
 .container-second-menu {
   margin-top: 3rem;
+  width: 95%;
 }
+.second-container-link {
+  align-items: center;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+}
+.second-container-link-ph {
+  align-items: center;
+}
+.second-nav-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 100%;
+}
+.second-nav-container ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 10px;
+}
+.second-link-menu {
+  align-items: center;
+  color: #817f7f;
+  cursor: pointer;
+  display: flex;
+  font-family: Questrial;
+  height: 2rem;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+}
+.second-link-menu-ph {
+  align-items: center;
+  color: #817f7f;
+  cursor: pointer;
+  display: flex;
+  font-family: Questrial;
+  height: 2rem;
+  justify-content: center;
+  width: 7rem;
+  text-decoration: none;
+}
+.second-link-menu:focus {
+  background-color: #ff5672;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.second-link-menu-ph:focus {
+  background-color: #ff5672;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.second-link-menu:hover {
+  background-color: #ff5672;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.second-link-menu-ph:hover {
+  background-color: #ff5672;
+  color: #ffffff;
+  transition: 0.4s;
+}
+/* End Section Two */
+/* Section Grid Galery */
+.masonry-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+.masonry-item {
+  height: 100%;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.masonry-item img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.container-btn-showMore {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.btn-showMore {
+  border: none;
+  background-color: #ff5672;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+  transition: all 0.4s;
+}
+.btn-showMore:hover {
+  filter: brightness(1.2);
+  padding: 0.7rem 2.5rem;
+}
+/* End Section Grid Galery */
+/* Footer */
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 1.5rem 0;
+  width: 100%;
+}
+.copyRight {
+  font-family: Montserrat;
+  font-weight: 300;
+  text-align: center;
+}
+.copyRight a{
+  color: #ff5672;
+  font-weight: 500;
+  text-decoration: none;
+}
+.copyRight a:visited{
+  color: #ff5672;
+}
+.container-icons-footer {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+/* End Footer */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header .nav-container {
+    display: none;
+  }
+  .header-logo-mobile {
+    max-width: 300px;
+    text-align: center;
+  }
+  .header-logo-mobile img {
+    width: 70%;
+  }
+  .menu-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    left: -100%;
+    width: 100%;
+  }
+  .menu.active {
+    left: 0;
+  }
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 36px;
+  position: absolute;
+  right: 2rem;
+  top: 10px;
+}
+
+@media (max-width: 600px) {
+  .container-icons {
+    margin-top: 2rem;
+  }
+  .container-second-menu{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .copyRight {
+    max-width: 300px;
+  }
+}
+/* End Media Querys */
