@@ -77,3 +77,44 @@ header {
   color: #ffffff;
   transition: 0.5s;
 }
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container-box {
+  align-items: center;
+  background-color: #FF5672;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 36rem;
+  width: 95%;
+}
+.h1-section-box {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.p-section-box {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 100;
+  margin-top: 2rem;
+  text-align: center;
+}
+.button-section-box  {
+  background-color: #ffffff;
+  border: #ffffff;
+  color:#FF5672;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 700;
+  height: 2.5rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  width: 10rem;
+}
