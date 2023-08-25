@@ -1,0 +1,23 @@
+/*  --- Montserrat Font ---  */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Assets/Fonts/Montserrat-Font/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Assets/Fonts/Montserrat-Font/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Assets/Fonts/Montserrat-Font/Montserrat-Light.ttf);
+    font-weight: 400;
+}
+
+/*  --- Questrial ---  */
+@font-face {
+    font-family: 'Questrial';
+    src: url(../Assets/Fonts/Questrial-Font/Questrial-Regular.ttf);
+    font-weight: 500;
+}

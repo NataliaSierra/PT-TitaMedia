@@ -5,42 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Prueba Técnica Tita Media</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/Assets/Images/Favicon/titamedia.png"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/Styles/index.css"
-    />
+    <link rel="icon" type="image/png" href="/Assets/Images/Favicon/titamedia.png"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/Styles/font-faces.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/Styles/index.css"/>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-container">
+        <div class="header-logo">
+          <img
+            src="/Assets/Images/Tita-Media-Logo/Tita-Media.png"
+            alt="Tita Media Logo"
+          />
+        </div>
         <ul>
-          <div class="header-logo">
-            <img src="/Assets/Images/Tita-Media-Logo/Tita-Media.png" alt="Tita Media Logo">
-          </div>
-          <li>
-            <a href="">All</a>
+          <li class="container-link">
+            <a class="link-menu" href="#/">All</a>
           </li>
-          <li>
-            <a href="">Branding</a>
+          <li class="container-link">
+            <a class="link-menu" href="#/">Branding</a>
           </li>
-          <li>
-            <a href="">Web</a>
+          <li class="container-link">
+            <a class="link-menu" href="#/">Web</a>
           </li>
-          <li>
-            <a href="">Photography</a>
+          <li class="container-link-ph">
+            <a class="link-menu-ph" href="#/">Photography</a>
           </li>
-          <li>
-            <a href="">App</a>
+          <li class="container-link">
+            <a class="link-menu" href="#/">App</a>
           </li>
-          <li>
-            <a href="">Search</a>
+          <li class="container-link-search">
+            <a class="link-menu-search" href="#/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-search"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#FF5672"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </a>
           </li>
         </ul>
       </nav>
